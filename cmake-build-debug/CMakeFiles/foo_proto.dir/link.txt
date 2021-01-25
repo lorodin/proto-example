@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfoo_proto.a  CMakeFiles/foo_proto.dir/foo.pb.cc.o
+/usr/bin/ranlib libfoo_proto.a

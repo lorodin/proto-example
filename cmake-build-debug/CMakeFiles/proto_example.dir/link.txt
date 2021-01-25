@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror -g   CMakeFiles/proto_example.dir/main.cpp.o CMakeFiles/proto_example.dir/foo.pb.cc.o  -o proto_example  libproto.a /usr/lib/x86_64-linux-gnu/libprotobuf.so 

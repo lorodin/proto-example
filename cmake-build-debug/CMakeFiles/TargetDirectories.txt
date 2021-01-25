@@ -1,0 +1,5 @@
+/home/r2d2/CLionProjects/proto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/r2d2/CLionProjects/proto/cmake-build-debug/CMakeFiles/bar_proto.dir
+/home/r2d2/CLionProjects/proto/cmake-build-debug/CMakeFiles/foo_proto.dir
+/home/r2d2/CLionProjects/proto/cmake-build-debug/CMakeFiles/main.dir
+/home/r2d2/CLionProjects/proto/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbar_proto.a  CMakeFiles/bar_proto.dir/bar.pb.cc.o CMakeFiles/bar_proto.dir/src/Canvas.cpp.o
+/usr/bin/ranlib libbar_proto.a

@@ -1,0 +1,77 @@
+syntax = "proto2";
+
+package Example;
+
+message PFoo
+{
+  repeated float z = 1;
+}
+
+enum PrimType {
+  STRING = 0;
+  RECT = 1;
+  LINE = 2;
+}
+
+enum Color {
+  RED = 0;
+  BLUE = 1;
+  GREEN = 2;
+  YELLOW = 3;
+}
+
+enum LineType {
+  DOTTED = 0;
+  SOLID = 1;
+  DOUBLE_SOLID = 2;
+  DOUBLE_DOTTED = 3;
+}
+
+message OSDCanvas
+{
+  repeated OsdPrimitive primitives = 1;
+}
+
+message Point {
+  required int32 x = 1;
+  required int32 y = 2;
+}
+
+message Size {
+  required int32 width = 1;
+  required int32 height = 2;
+}
+
+message OsdString {
+  extend OsdPrimitive {
+    optional OsdString string = 5;
+  }
+
+  required string message = 1;
+  required int32 size = 2;
+}
+
+message OsdLine {
+  extend OsdPrimitive {
+    optional OsdLine line = 6;
+  }
+  required Point position2 = 1;
+  required int32 weight = 2;
+  required LineType line_type = 3;
+}
+
+message OsdRect {
+  extend OsdPrimitive {
+    optional OsdRect rect = 7;
+  }
+  required bool fill = 1;
+  required Size size = 2;
+}
+
+message OsdPrimitive {
+  required PrimType prim_type = 1;
+  required Point position = 2;
+  required Color color = 3;
+
+  extensions 4 to max;
+}

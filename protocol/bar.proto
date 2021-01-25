@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package Example2;
+
+message PBar
+{
+  float b = 1;
+}

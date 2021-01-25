@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Werror -O0 -g   CMakeFiles/main.dir/main.cpp.o  -o main  libfoo_proto.a libbar_proto.a /usr/lib/x86_64-linux-gnu/libprotobuf.so -pthread 
